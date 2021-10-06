@@ -40,7 +40,7 @@ h2{
 .informacoes{
     padding: 10px;
     margin-top: 50px;
-    max-width: 1200;
+    max-width: 1250px;
     margin-left: 50px;
     display: inline-block;
     border: 3px dashed #000000;
@@ -53,11 +53,12 @@ h2{
 }
 .informacoes-lista{
     margin-top: 20px;
-    text-align: center;
+    padding: 0 100px;
 }
 .informacoes-itens{
-   line-height: 2;
+   line-height: 3;
    font-size: 20px;
+   display: block;
 }
 .informacoes-itens:before{
     content: "🍊";
@@ -117,19 +118,22 @@ button:hover{
     border: 2px dashed white;
 }
 .rodape{
-    margin: 50px 0 50px 110px;
+    margin: 50px 100px;
     width: 1100px;
     height: 60px;
-    padding: 50px 0 50px 100px;
-    border: 3px solid #000000;
+    padding: 50px 50px;
+/*    border: 3px solid #000000;*/
     border-radius: 20px;
+    text-align: center;
 }
-.rodape-img{
-    width: 10%;
-}
+
 .rodape p{
     font-size: 30px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 30px;
+}
+
+.rodape-img{
+    width: 15%;
+    position: absolute;
+    right: 100px;
+    top: 1000px;
 }
