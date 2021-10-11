@@ -32,17 +32,19 @@
             </ul>
         </section>
         <section class="agendamento">
-            <form>
+            <form preventDefault()>
                 <legend>Agendamento aos interessados</legend>
-                <select required class="local">
+                <label> Informe seu E-mail para contato</label>
+                <input class="email" type="email" required placeholder="meuemail@fcamara.com">
+                <select required class="local" id="sede">
                     <option value="" disabled selected>Selecione sua Sede</option>
                     <option>São Paulo(principal)</option>
                     <option>Santos(filial)</option>
                 </select>
                 <label for="data">Informe a data que deseja retornar</label>
-                <input id="data" class="data" type="date" required placeholder="11/21/2022">
+                <input id="data" class="data" type="date" required>
                 <label>Seguindo o exemplo abaixo, selecione o nº correspondente a estação de trabalho desejada</label>
-                <select required class="estacoes">
+                <select required class="estacoes" id="posicao">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -69,8 +71,8 @@
                     <option>24</option>
                 </select>  
                 <img src="cadeiras.png" class="imagemForms">
-                <button type="submit" disabled >Enviar solicitação</button>
-            </form>
+                
+                <button class="enviar" onclick="window.open(href='enviado.html')">Enviar solicitação  </button>
         </section>
     </main>
     <footer class="rodape">
